@@ -1,11 +1,8 @@
-# nerdypunk.github.io
+# Free Retro Blog
 
-[![GitHub tag](https://img.shields.io/github/tag/NerdyPunk/My retro blog?include_prereleases=&sort=semver&color=blue)](https://github.com/NerdyPunk/My retro blog/releases/)
+A blog template for game developers, inspired by John Carmack's .plan files, where you can share your
+coding journey without web dev skills. It's hosted for free on GitHub Pages with no dependencies,
+just simple HTML for ease of use. Visit my ongoing blog at [nerdypunk.github.io](https://nerdypunk.github.io)
 
-This is the public repo of my current blog  the info from the development of my game **Spaceman Memories**.  
-If you want to wishlist or follow the game on social media find more info at [www.nerdypunk.dev](http://www.nerdypunk.dev).  
-This work is inspired by the .plan files by John Carmack which he posted in the early ID Software days.  
-I hope to use this as an accountability system for my game development endeavors. If you want  
-to make your own archive, just fork [this repo on Github](https://github.com/nerdypunk/nerdypunk.github.io).
-
+Made by [Nerdypunkdev](https://www.x.com/nerdypunkdev)
 Released under [UNLICENSE](/LICENSE) by [@NerdyPunk](https://github.com/NerdyPunk).
