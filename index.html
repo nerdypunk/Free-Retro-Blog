@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My retro blog</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        /* ASCII Art style */
+        .ascii-art {
+            text-align: center;
+            font-family: monospace;
+            white-space: pre;
+            margin: 0;
+            padding: 20px 0;
+            width: 100%;
+            display: block;
+            position: relative;
+            top: 0;
+            font-size: 14px;
+            line-height: 1;
+        }
+
+        /* Container for main content */
+        .container {
+            position: relative;
+        }
+
+        /* Heading style */
+        h1 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        /* Content area styling */
+        .content {
+            text-align: center;
+        }
+
+        /* Divider line style */
+        .divider {
+            width: 100%;
+            height: 2px;
+            background-color: #4AFF00;
+            margin: 20px 0;
+        }
+
+        /* Markdown content styling */
+        .markdown-content {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- ASCII art for the header -->
+    <pre class="ascii-art" translate="no">
+ ██╗  ██╗███████╗██╗     ██╗      ██████╗
+ ██║  ██║██╔════╝██║     ██║     ██╔═══██╗
+ ███████║█████╗  ██║     ██║     ██║   ██║
+ ██╔══██║██╔══╝  ██║     ██║     ██║   ██║
+ ██║  ██║███████╗███████╗███████╗╚██████╔╝
+ ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝
+    </pre>
+    <div class="content">
+        <div id="markdown-content-en" class="markdown-content"></div>
+        <!-- Divider -->
+        <div class="divider"></div>
+        <div id="markdown-content-ja" class="markdown-content" lang="ja"></div>
+        <!--⚠️ Button Links to other pages, edit these to link to your own folders ⚠️-->
+        <a href="/sampleplan.html" class="button">View Sample Plan</a>
+        <a href="Per%20Month%20Archive/MonthYear.html" class="button">Edit Month and Year here</a><br>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+    <!-- ⚠️Edit this next section to change to your own welcome text⚠️-->
+    document.addEventListener('DOMContentLoaded', function() {
+        var markdownTextEn = `# Welcome to my blog!
+
+A blog template for game developers, inspired by John Carmack's .plan files, where you can share your
+coding journey without web dev skills. It's hosted for free on GitHub Pages with no dependencies,
+just simple HTML for ease of use. Visit my ongoing blog at [nerdypunk.github.io](https://nerdypunk.github.io)
+
+Made by [Nerdypunkdev](https://www.x.com/nerdypunkdev)`;
+
+        var markdownTextJa = `# ゲーム開発アーカイブへようこそ
+
+
+ゲーム開発者向けのブログです。ジョン・カーマックの.planファイルに着想を得て、
+ウェブ開発のスキルがなくても自分のコードの旅を共有できます。
+GitHub Pagesで無料ホスト、依存関係なし、シンプルなHTMLだけで使いやすいです。`;
+
+        document.getElementById('markdown-content-en').innerHTML = marked.parse(markdownTextEn);
+        document.getElementById('markdown-content-ja').innerHTML = marked.parse(markdownTextJa);
+    });
+</script>
+</body>
+</html>

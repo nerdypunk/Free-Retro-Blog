@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Modifications List - Hacker Style</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="container" id="markdown-content">
+    <a href="/index.html" class="button">Home</a>
+
+    <!-- Leave this empty; it will be filled by JavaScript -->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<!-- This is the section you can edit to add your own blog entries, just change the markdown -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var markdownText = `# This is a sample .plan file from John Carmack
+
+John Carmack's .plan files were akin to personal tech diaries where he'd detail his programming endeavors.
+A typical entry might include updates on recent code optimizations for games like Doom, discussions on debugging, or thoughts on tech trends.
+
+### Bullet Points
+
+- page flip crap
+- stretch console
+- faster swimming speed
+- damage direction protocol
+- armor color flash
+- gib death
+- grenade tweaking
+- brightened alias models
+- nail gun lag
+- dedicated server quit at game end
+
+### Numbered List
+
+1. scoreboard
+2. optional full size
+3. view centering key
+4. vid mode 15 crap
+5. change ammo box on sbar
+6. allow "restart" after a program error
+7. respawn blood trail?
+8. -1 ammo value on rockets
+9. light up characters
+
+### Additional Notes
+
+vsync on high framerates`;
+
+        var markdownContent = document.getElementById('markdown-content');
+        if (markdownContent) {
+            markdownContent.innerHTML = marked.parse(markdownText) + '<br><a href="/index.html" class="button">Home</a>';
+        }
+    });
+</script>
+</body>
+</html>
